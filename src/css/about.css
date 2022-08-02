@@ -1,0 +1,44 @@
+.about {
+  background-color: var(--bg-color);
+  padding-top: 90px;
+}
+
+.about__wrapper {
+  display: flex;
+  gap: 120px;
+}
+
+.about__left {
+  max-width: 480px;  
+}
+
+.about__title {
+  margin-bottom: 30px;
+}
+
+.about__desc {
+  margin-bottom: 20px;
+}
+
+.about__desc:last-child {
+  margin-bottom: 0;
+}
+
+.about__right {
+  text-align: end;
+}
+
+.about__link {
+  font-weight: 500;
+  color: var(--orange-color);
+  padding-right: 15px;
+}
+
+.about__link:after {
+  content: "";
+  display: inline-block;
+  width: 26px;
+  height: 16px;
+  background-image: url("../img/arrow.svg");
+  transform: translate(15px, 2px);
+}

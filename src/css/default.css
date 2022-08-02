@@ -1,0 +1,130 @@
+@font-face {
+  font-family: "Comfortaa";
+  src: local('Comfortaa'),
+        local('Comfortaa Regular'), 
+        url('../fonts/Comfortaa-Regular.woff2') format("woff2"),
+        url('../fonts/Comfortaa-Regular.woff') format("woff");
+        font-weight: 400;
+        font-display: swap;
+}
+
+@font-face {
+  font-family: "HelveticaNeueCyr";
+  src: local('HelveticaNeueCyr'),
+        local('HelveticaNeueCyr Light'),
+        url('../fonts/HelveticaNeueCyr-Light.woff2') format("woff2"),
+        url('../fonts/HelveticaNeueCyr-Light.woff') format("woff");
+        font-weight: 300;
+        font-display: swap;
+}
+
+@font-face {
+  font-family: "HelveticaNeueCyr";
+  src: local('HelveticaNeueCyr'),
+        local('HelveticaNeueCyr Medium'),
+        url('../fonts/HelveticaNeueCyr-Medium.woff2') format("woff2"),
+        url('../fonts/HelveticaNeueCyr-Medium.woff') format("woff");
+        font-weight: 500;
+        font-display: swap;
+}
+
+@font-face {
+  font-family: "HelveticaNeueCyr";
+  src: local('HelveticaNeueCyr'),
+        local('HelveticaNeueCyr Roman'),
+        url('../fonts/HelveticaNeueCyr-Roman.woff2') format("woff2"),
+        url('../fonts/HelveticaNeueCyr-Roman.woff') format("woff");
+        font-weight: 700;
+        font-display: swap;
+}
+
+html {
+  position: relative;
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  font-family: HelveticaNeueCyr, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 1.5;
+  color: var(--main-color);
+  /* width: 1440px;
+  margin: 0 auto; */
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+button {
+  padding: 0;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+section {
+  padding: 45px 0;
+}
+
+.container {
+  max-width: 1440px;
+  padding: 0 130px;
+  margin: 0 auto;
+}
+
+.title {
+  font-family: Comfortaa, sans-serif;
+  font-weight: 400;
+  font-size: 50px;
+}
+
+.btn-text {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 22px;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--orange-color);
+}
+
+
+@media (max-width: 1280px) { 
+  .container {
+    padding: 0 70px;
+  }
+}
+
+@media (max-width: 767px) {
+  .container {
+    padding: 0 25px;
+  }
+}
