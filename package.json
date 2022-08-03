@@ -1,14 +1,22 @@
 {
   "name": "project",
   "version": "1.0.0",
-  "description": "",
+  "description": "start gulp",
   "main": "index.js",
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "AlexeiWeb",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexeiweb/fh-gulp.git"
+  },
+  "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alexeiweb/fh-gulp/issues"
+  },
+  "homepage": "https://github.com/alexeiweb/fh-gulp#readme",
   "devDependencies": {
     "browser-sync": "^2.27.10",
     "del": "^7.0.0",

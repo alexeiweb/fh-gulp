@@ -2,7 +2,8 @@ import gulp from 'gulp';
 import browserSync from 'browser-sync';
 import cssImport from 'gulp-cssimport';
 import gulpCssimport from 'gulp-cssimport';
-import del from 'del';
+import {deleteAsync} from 'del';
+  const del = deleteAsync;
 
 // задачи
 
