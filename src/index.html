@@ -4,9 +4,11 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Friendly House</title>  
+  <title>Friendly House - Приют для животных</title>  
 
+  <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/index.css">
+  <!-- <link rel="stylesheet" href="scss/index.scss"> -->
 </head>
 <body>
   <header class="header">
@@ -20,7 +22,7 @@
           </svg>
         </button>
         
-        <img src="img/logo.png" class="header__logo_image" alt="Логотип приюта для животных Friendly House">
+        <img src="img/logo.png" class="header__logo" alt="Логотип приюта для животных Friendly House">
 
         <a class="header__phone" href="tel:88493003957" >8 (849) 300 - 39 - 57</a>
       </nav>
@@ -28,7 +30,7 @@
   </header>
 
   <main class="main">
-    <section class="hero">
+    <section class="hero" hidden>
       <div class="container">
         <div class="hero__wrapper">
           <div class="hero__left">
@@ -46,6 +48,24 @@
           <div class="hero__right">
             <img src="img/sara.jpg" alt="Фотография Сары" class="hero__image" width="580" height="580">
           </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="hero">
+      <div class="container">
+        <div class="hero__wrapper">
+          <h1 class="hero__title title"><span>Сара ждёт,</span> когда найдётся её человек</h1>
+
+          <img src="img/sara.jpg" alt="Фотография Сары" class="hero__image" width="580" height="580">
+  
+          <label>
+            <button class="hero__btn" type="submit">
+              <img src="img/hero_btn.png" alt="" class="hero__btn_image">
+  
+              <p class="hero__btn_text btn-text">Жми на лапку, чтобы помочь!</p>
+            </button>
+          </label>          
         </div>
       </div>
     </section>
@@ -281,6 +301,50 @@
         </label>
       </div>
     </section>
+
+    <section class="pets">
+      <div class="container">
+        <h2 class="pets__title title">Наши питомцы</h2>
+
+        <div class="pets__list">
+          <figure class="pets__item item-1">
+            <img src="img/pets1.jpg" alt="">
+
+            <figcaption>Твинки и Пинки, 2 месяца</figcaption>
+          </figure>
+
+          <figure class="pets__item item-2">
+            <img src="img/pets2.jpg" alt="">
+
+            <figcaption>Мурзик, 6 месяцев</figcaption>
+          </figure>
+
+          <figure class="pets__item item-3">
+            <img src="img/pets3.jpg" alt="">
+
+            <figcaption>Миша (кот) и Ричард (пёс), 3 года и 5 лет</figcaption>
+          </figure>
+
+          <figure class="pets__item item-4">
+            <img src="img/pets4.jpg" alt="">
+
+            <figcaption>Джек, 1 год</figcaption>
+          </figure>
+
+          <figure class="pets__item item-5">
+            <img src="img/pets5.jpg" alt="">
+
+            <figcaption>Джерри, 3 недели</figcaption>
+          </figure>
+          
+          <figure class="pets__item item-6">
+            <img src="img/pets8.jpg" alt="">
+
+            <figcaption>Рокки и Сеня, 2 и 3 года</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
   </main>
 
   <footer class="footer">
@@ -337,6 +401,7 @@
         <li class="burger__menu_item">Контакты</li>
       </ul>
     </div>
+
     <div class="modal">
       <div class="modal__container">
         <h3 class="modal__title title">Ты можешь помочь нам!</h3>
